@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Score Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>IPL Score Predictor</h1>
+        <form action="/predict" method="post">
+            <label for="venue">Venue:</label>
+            <input type="text" id="venue" name="venue" required>
+
+            <label for="bat_team">Batting Team:</label>
+            <input type="text" id="bat_team" name="bat_team" required>
+
+            <label for="bowl_team">Bowling Team:</label>
+            <input type="text" id="bowl_team" name="bowl_team" required>
+
+            <label for="batsman">Batsman:</label>
+            <input type="text" id="batsman" name="batsman" required>
+
+            <label for="bowler">Bowler:</label>
+            <input type="text" id="bowler" name="bowler" required>
+
+            <button type="submit">Predict Score</button>
+        </form>
+    </div>
+</body>
+</html>
